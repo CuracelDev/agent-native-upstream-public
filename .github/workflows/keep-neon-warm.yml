@@ -27,7 +27,7 @@ concurrency:
 jobs:
   warm:
     name: Ping app health endpoints
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, linux, ondemand]
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
